@@ -1,25 +1,10 @@
-# Tic Tac Toe ✨
+# Tic Tac Toe 
 
+A game in which two players alternately put Xs and Os in compartments of a figure formed by two vertical lines crossing two horizontal lines and each tries to get a row of three X's or three O's before the opponent does. Implemented using Artificial Intelligence based on Minimax algorithm.
 
-## Running Tic-Tac-Toe:
-
-1. Make sure [Python 3.6+](https://www.python.org/downloads/) is installed.
-2. Install [Pygame](https://www.pygame.org/news).
-3. Install requirements  
-```
-    pip install requirements.txt
-``` 
-4. Running the program:
-```
-    $ python runner.py
-```
-5. Output : 
-```
-    GUI interface for Tic Tac Toe game.
-```
-<br>
-
-
+<p align="center">
+	<img src="preview/game_in_action.jpg"></img>
+</p>
 
 ## Introduction
 
@@ -71,6 +56,7 @@ Where,
 * **depth**: index of the node in the game tree
 * **player**: may be a *MAX* player or *MIN* player
 
+
 The Python implementation of initial state, i.e. the initial state of the board. First of all, consider it:
 
 ```python
@@ -89,7 +75,6 @@ if player(board) == X:
 elseif player(board) == o:                           
         value = math.inf
 ```
-
 If the depth is equal zero, then the board hasn't new empty cells to play. Or, if a player wins, then the game ended for MAX or MIN. So the score for that state will be returned.
 
 ```python
@@ -164,10 +149,3 @@ def minimax(board):
 
     return move
 ```
-
-<br>
-Feel free to follow along the code provided along with mentioned comments for 
-<br>better understanding of the project, if any issues feel free to reach me out.
-<br>
-
-
